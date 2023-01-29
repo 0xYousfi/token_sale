@@ -1,5 +1,5 @@
 var DappToken = artifacts.require("./DappToken.sol");
 
-module.exports = function(deployer) {
-  deployer.deploy(DappToken);
+module.exports = async function(deployer) {
+  await deployer.deploy(DappToken,1000000);
 };
